@@ -6,6 +6,7 @@ function kuari($kue){
 	global $koneksi;
 
 	$result = mysqli_query($koneksi,$kue);
+	$data = mysqli_query($koneksi,$kue);
 	$rows = [];
 	while ( $row = mysqli_fetch_assoc($result) ) {
 		$rows[]= $row;
